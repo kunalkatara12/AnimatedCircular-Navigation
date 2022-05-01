@@ -48,10 +48,10 @@
         $(".toggle").toggleClass("active");
       });
 
-      $("li").each((index, value) => {
+     $("li").each((index, value) => {
         $(value).on("mouseover", function () {
-          $("li").each((index, value) => {
-            $(value).removeClass("active");
+          $("li").each((indexChild, valueChild) => {
+            $(valueChild).removeClass("active");
             $(this).addClass("active");
           });
         });
